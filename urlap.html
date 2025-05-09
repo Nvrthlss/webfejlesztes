@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang = "hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Üvegtigris - Űrlap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/fontSize.js" defer></script>
+</head>
+
+<body  style="background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('media/borito.jpg'); background-size: cover; background-repeat: no-repeat;">
+    <header>
+        <div class="header-grid">
+          <nav class="navbar">
+            <ul>
+              <li><a href="index.html">Kezdőlap</a></li>
+              <li><a href="szereplok.html">Szereplők</a></li>
+              <li><a href="urlap.html">Űrlap</a></li>
+            </ul>
+          </nav>
+      
+          <div class="header-image-container">
+            <img src="media/header_pic.png" alt="Üvegtigris">
+          </div>
+      
+          <div class="button-container">
+            <button id="betumeretGomb">Betűméret váltása</button>
+          </div>
+        </div>
+    </header>
+            
+    <main>
+        <section class="content">
+            <h1>Üvegtigris - Kedvenc idézet</h1>
+            
+            <figure class="image-container">
+                <img src="media/gaben.jpg" alt="Gaben">
+            </figure>
+
+            <p>Neked melyik volt a kedvenc idézeted? Írd le az alábbi űrlapon:</p>
+            
+            <form class="form-grid">
+                <div>
+                    <label for="szovegmezo">Szövegmező:</label>
+                    <input type="text" id="szovegmezo" name="szovegmezo">
+                    
+                    <label for="szovegterulet">Szövegterület:</label>
+                    <textarea id="szovegterulet" name="szovegterulet"></textarea>
+                </div>
+            
+                <div class="form-column">
+                    <div>
+                        <label for="opcio1">
+                            <input type="radio" id="opcio1" name="radio" value="opcio1"> Betöltöttem a 18. életévemet
+                        </label>
+                    </div>
+                    <div>
+                        <label for="opcio2">
+                            <input type="radio" id="opcio2" name="radio" value="opcio2"> Nem töltöttem be a 18. életévemet
+                        </label>
+                    </div>
+                </div>
+            
+                <div class="form-column checkbox-container">
+                    <label for="checkbox">
+                        <input type="checkbox" id="checkbox" name="checkbox" value="elfogad"> Az e-mail címem a későbbiekben felhasználható
+                    </label>
+                </div>
+            
+                <div class="form-column buttons-container">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>            
+        </section>
+
+        <div class="image-container-bottom">
+            <img src="media/szereplok2.jpg" alt="Szereplők">
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Üvegtigris Oldal</p>
+            <p>
+                <a href="https://hu.wikipedia.org/wiki/Üvegtigris" target="_blank">Wikipédia</a>
+                <a href="https://www.imdb.com/title/tt0257290/" target="_blank">IMDb</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
