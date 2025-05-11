@@ -7,6 +7,13 @@ body {
     box-sizing: border-box;
 }
 
+.high-contrast {
+    background-color: #000;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 header {
   background-color: #1E90FF;
   padding: 10px 0;
