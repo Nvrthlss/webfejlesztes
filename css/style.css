@@ -3,6 +3,8 @@ body {
     font-size: 1rem;
     margin: 0;
     background-color: #ADD8E6;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 header {
