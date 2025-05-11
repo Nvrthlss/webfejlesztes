@@ -1,5 +1,6 @@
 body {
-    font-family: sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 1rem;
     margin: 0;
     background-color: #ADD8E6;
 }
@@ -93,16 +94,19 @@ header {
 }
   
 main h1 {
+    font-size: 2rem;
     padding: 20px;
     text-align: center;
 }
 
 main h3 {
+    font-size: 1.5rem;
     padding: 20px 0px;
     text-align: left;
 }
 
 main p {
+    font-size: 1rem;
     padding: 0px 20px;
     text-align: left;
 }
@@ -112,15 +116,18 @@ main p {
 }
 
 .content h1 {
+    font-size: 2rem;
     color: #333;
 }
 
 .content h3 {
+    font-size: 1.25rem;
     text-align: justify;
     padding: 0px 175px;
 }
 
 .content p {
+    font-size: 1rem;
     line-height: 1.6;
     color: #555;
     text-align: justify;
@@ -365,4 +372,49 @@ form textarea {
 .image-container-bottom img {
     max-width: 40%;
     height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .buttons-container {
+        grid-column: 1;
+        align-items: center;
+    }
+
+    .image-container-bottom img {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .buttons-container {
+        grid-column: 2 / 3;
+        align-items: flex-end;
+    }
+
+    .image-container-bottom img {
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    form {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .buttons-container {
+        grid-column: 3 / 4;
+        align-items: flex-end;
+    }
+
+    .image-container-bottom img {
+        max-width: 40%;
+    }
 }
