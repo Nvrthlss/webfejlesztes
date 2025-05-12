@@ -271,7 +271,7 @@ th {
     height: auto;
 }
 
-.bottom-content {
+.bottom-content p {
     line-height: 1.6;
     color: #555;
     text-align: justify;
